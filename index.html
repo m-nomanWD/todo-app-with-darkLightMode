@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Muhamma Nauman CB FEM | Todo app</title>
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="raper">
+        <div class="app-header">
+          <h1>TODO</h1>
+
+          <span class="moon"
+            ><img src="./assets/images/icon-moon.svg" alt=""
+          /></span>
+          <span class="sun"
+            ><img src="./assets/images/icon-sun.svg" alt=""
+          /></span>
+        </div>
+        <div class="todo-add" id="todo-add">
+          <span class="check" id="check-btn"
+            ><img class="check-img" src="./assets/images/icon-check.svg" alt=""
+          /></span>
+          <div class="input-container">
+            <input placeholder="create a new todo..." type="text" />
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="list-raper">
+      <div class="todo-list"></div>
+      <h3 class="empty">No Task in the List</h3>
+      <div class="stutus-bar">
+        <div class="item-left"><span class="counter">0</span> items left</div>
+        <div class="clear-complete">Clear Completed</div>
+      </div>
+    </div>
+
+    <div class="filter-btns">
+      <span class="all active-filter" id="filter-btn">All</span>
+      <span class="active" id="filter-btn">Active</span>
+      <span class="completed" id="filter-btn">Completed</span>
+    </div>
+    <p class="drag">Drag and drop to reorder list</p>
+
+    <!-- Add dynamic number -->
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor.</a
+      >
+      || Coded by || <a href="#">Muhammad Nauman.</a>
+    </div>
+    <script src="./assets/app.js"></script>
+  </body>
+</html>
